@@ -1,7 +1,7 @@
 // Program name: Chicken Wings
 // Student name: Jhaymee Bisenio
 // Date: 28 March 2024
-// Program Description:
+// Program Description: Tells you how many wings you can buy
 
 public class ChickenWings {
     public static void main(String[] args) throws Exception {
