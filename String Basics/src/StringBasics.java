@@ -1,6 +1,6 @@
 // Program name: String Basics
 // Student name: jhaymee Bisenio
-// Date: 28 March 2024
+// Date: 6 April 2024
 // Program Description: manipulates strings
 
 public class StringBasics {
