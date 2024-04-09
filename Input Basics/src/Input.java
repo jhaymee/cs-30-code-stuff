@@ -10,13 +10,13 @@ import java.util.Scanner;
 
 public class Input {
     public static void main(String[] args) throws Exception {
-    Scanner keyboard = new Scanner(System.in);
+    Scanner keyboard = new Scanner(System.in); // Creates scanner
 
       int intOne, intTwo;
-      double doublOne, doublTwo;
+      double doublOne, doublTwo; // declares variables
 
       System.out.print("Enter an integer : ");
-      intOne = keyboard.nextInt();
+      intOne = keyboard.nextInt(); // reads user input
 
       System.out.print("Enter an integer : ");
       intTwo = keyboard.nextInt();
@@ -30,9 +30,9 @@ public class Input {
       System.out.println("integer one = " + intOne);
       System.out.println("integer two = " + intTwo);
       System.out.println("double one = " + doublOne);
-      System.out.println("double two = " + doublTwo);
+      System.out.println("double two = " + doublTwo); // tells user what the integers/doubles are
 
-      System.out.println(intOne + intTwo);
-      System.out.println(doublOne + doublTwo);
+      System.out.println(intOne + intTwo); // adds user input integers
+      System.out.println(doublOne + doublTwo); // adds user input doubles
     }
 }
