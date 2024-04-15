@@ -6,6 +6,7 @@ public class FarmRunner {
 
         bird.speak();
         bird.sayName();
+        System.out.println(1 + "" + 2);
 
     }
     
