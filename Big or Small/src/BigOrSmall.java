@@ -1,13 +1,21 @@
-// Program name: Big or Small
+// Program name: Big Or Small
 
 // Student name: Jhaymee Bisenio
 
-// Date: 15 April 2024
+// Date: 16 April 2024
 
-// Program Description: checks parameters and outputs depending on it
+// Program Description: Checks parameters and outputs a different result depending on it
+
+import static java.lang.System.*; 
+import java.util.Scanner;
 
 public class BigOrSmall {
-    public static void main(String[] args) throws Exception {
-
-    }
+	public static void check( int a, int b ) {
+		if (a > b)
+		    System.out.println("yes"); //Answer
+        else if (b > a)
+            System.out.println("no");
+        else 
+            System.out.println("equals");
+	}
 }
