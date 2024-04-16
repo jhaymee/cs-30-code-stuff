@@ -1,10 +1,10 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
+// Program name: (The name you gave the program)
 
-//Name -
-//Date -
-//Class -
-//Lab  -
+// Student name: (Your name)
+
+// Date: (The date you completed the program)
+
+// Program Description:
 
 public class Sum
 {
