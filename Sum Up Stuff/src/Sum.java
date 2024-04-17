@@ -1,4 +1,4 @@
-// Program name: (The name you gave the program)
+// Program name: Sum Up Stuff
 
 // Student name: (Your name)
 
@@ -11,15 +11,15 @@ public class Sum
 	//instance variables
 	private double one, two, sum;
 
-	public void setNums(double num1, double num2)
-	{
+	public void setNums(double num1, double num2) {
+		
 	}
 
-	public void sum( )
-	{
+	public void sum( ) {
+
 	}
 
-	public void print( )
-	{
+	public void print( ) {
+		System.out.println("Your total is: " + sum);
 	}
 }
