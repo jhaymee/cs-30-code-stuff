@@ -1,22 +1,29 @@
-// Program name: (The name you gave the program)
+// Program name: Geometry Calculator
 
-// Student name: (Your name)
+// Student name: Jhaymee Bisenio
 
-// Date: (The date you completed the program)
+// Date: 22 April 2024
 
-// Program Description:
+// Program Description: Calculates perimeter, surface area, or area of a circle
 
 public class Geometry {
 
-    public void perimeter(double len, double wid) {
-
+    public double perimeter(double len, double wid) {
+        double pAnswer = 2 * (len + wid);
+        System.out.println("The perimeter is " + pAnswer);
+        return pAnswer;
     }
     
-    public void surfaceArea(double side) {
-
+    public double surfaceArea(double side) {
+        double sa = 6 * (side * side);
+        System.out.println("The surface area is " + sa);
+        return sa;
+        
     }
 
-    public void circleArea(double radius) {
-        math.PI;
+    public double circleArea(double radius) {
+        double a = 3.14 * (radius * radius);
+        System.out.println("The area of your circle is " + a);
+        return a;
     }
 }
