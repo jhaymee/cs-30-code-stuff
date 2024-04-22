@@ -1,11 +1,3 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-
-//Name -
-//Date -
-//Class -
-//Lab  - 
-
 public class SumRunner
 {
 	public static void main( String[] args )
@@ -15,6 +7,10 @@ public class SumRunner
 		test.sum( );
 		test.print();
 		
+		Sum test2 = new Sum();
+		test.setNums(3,7);
+		test.sum();
+		test.print();
 		
 		//add more test cases		
 	}
