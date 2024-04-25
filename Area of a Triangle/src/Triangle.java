@@ -35,8 +35,7 @@ public class Triangle
 	}
 
 	public void calcPerimeter() {
-		double p = perimeter;
-		p = a + b + c;
+		perimeter = sideA + sideB + sideC;
 		
 	}
 
