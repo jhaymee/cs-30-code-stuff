@@ -11,8 +11,7 @@ import java.lang.Math.*;
 
 public class TriangleRunner  //this class is used to test Triangle
 {
-	public static void main( String[] args )
-	{
+	public static void main( String[] args ) {
 		Scanner keyboard = new Scanner(System.in);
 
 		//ask for user input
