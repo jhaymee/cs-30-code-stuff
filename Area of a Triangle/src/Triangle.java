@@ -15,6 +15,10 @@ public class Triangle
 	private double perimeter;
 	private double theArea;
 
+	public static double sqrt(double a) {
+		return a;
+	}
+
 	public Triangle() {
 	   setSides(0,0,0);
 	   perimeter=0;
@@ -34,20 +38,23 @@ public class Triangle
 
 	}
 
-	public void calcPerimeter() {
+	public double calcPerimeter() {
 		perimeter = sideA + sideB + sideC;
-		
+		return perimeter;
 	}
 
-	public void calcArea( ) {
+	public double calcArea( ) {
 		double s;
-
-
+		s = perimeter / 2;
+		theArea = sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
+		return theArea;
 	}
+
+
 
 	public void print( ) {
-
-
+		System.out.println("The perimeter of your triangle is " + calcPerimeter());
+		System.out.println("The area of your triangle is " + calcArea());
 		System.out.println("\n\n");
 	}
 }

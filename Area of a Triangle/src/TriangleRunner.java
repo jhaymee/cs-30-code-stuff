@@ -15,13 +15,13 @@ public class TriangleRunner  //this class is used to test Triangle
 		Scanner keyboard = new Scanner(System.in);
 
 		//ask for user input
-		System.out.print("Enter side A ::  ");
+		System.out.print("Enter side A :  ");
 		int a = keyboard.nextInt();
 
-		System.out.print("Enter side B ::  ");
+		System.out.print("Enter side B :  ");
 		int b = keyboard.nextInt();
 
-		System.out.print("Enter side C ::  ");
+		System.out.print("Enter side C :  ");
 		int c = keyboard.nextInt();
 
 
