@@ -2,7 +2,7 @@
 
 // Student name: Jhaymee Bisenio
 
-// Date: 25 April 2024
+// Date: 30 April 2024
 
 // Program Description: calculates area of a triangle given the sides
 
@@ -15,38 +15,39 @@ public class Triangle
 	private double perimeter;
 	private double theArea;
 
-	public static double sqrt(double a) {
-		return a;
-	}
-
+	// default contructor
 	public Triangle() {
 	   setSides(0,0,0);
 	   perimeter=0;
 	   theArea=0;
 	}
 
+	// initialization constructor
 	public Triangle(int a, int b, int c) {
-
-
-	}
-
-
-	public void setSides(int a, int b, int c) {
 		sideA = a;
 		sideB = b;
 		sideC = c;
 
 	}
 
+	// method to set the inputs
+	public void setSides(int a, int b, int c) {
+		sideA = a;
+		sideB = b;
+		sideC = c;
+	}
+
+	// calculates perimeter
 	public double calcPerimeter() {
 		perimeter = sideA + sideB + sideC;
 		return perimeter;
 	}
 
+	// calculates area
 	public double calcArea( ) {
 		double s;
 		s = perimeter / 2;
-		theArea = sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
+		theArea = Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
 		return theArea;
 	}
 

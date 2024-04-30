@@ -1,11 +1,3 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-
-//Name -
-//Date -
-//Class -
-//Lab  -
-
 import java.util.Scanner; 
 import java.lang.Math.*;
 
@@ -32,13 +24,13 @@ public class TriangleRunner  //this class is used to test Triangle
 
 
 		//ask for user input
-		System.out.print("Enter side A ::  ");
+		System.out.print("Enter side A :  ");
 		a = keyboard.nextInt();
 
-		System.out.print("Enter side B ::  ");
+		System.out.print("Enter side B :  ");
 		b = keyboard.nextInt();
 
-		System.out.print("Enter side C ::  ");
+		System.out.print("Enter side C :  ");
 		c = keyboard.nextInt();
 
 
@@ -50,6 +42,25 @@ public class TriangleRunner  //this class is used to test Triangle
 
 		//add one more input section
 
+		Triangle test2 = new Triangle(a, b, c);
+		test.calcPerimeter();
+		test.calcArea();
+		test.print();
+
+		System.out.print("Enter side A :  ");
+		a = keyboard.nextInt();
+
+		System.out.print("Enter side B :  ");
+		b = keyboard.nextInt();
+
+		System.out.print("Enter side C :  ");
+		c = keyboard.nextInt();
+
+
+		test.setSides(a,b,c);
+		test.calcPerimeter();
+		test.calcArea();
+		test.print();
 
 
 
