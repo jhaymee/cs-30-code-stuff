@@ -31,10 +31,13 @@ public class CoolNumbers
 	 *of the coolNumbers between 6 and stop
 	 */
 	public static int countCoolNumbers( int stop ) {
-		for (int i = 6; i < stop; i++) {
+		int i = 6;
+		int count = 0;
+		for (i = 6; i < stop; i++) {
 			isCoolNumber(i);
+			count = stop - i;
 		}
-		return 0;
+		return count;
 	}
 }
 
