@@ -10,17 +10,20 @@ import static java.lang.System.*;
 
 public class CoolNumbers 
 {
+	
 	/*
 	 *method isCoolNumber will return true if
 	 *	num % 3-6 all have a remainder of 1
 	 *it will return false otherwize
 	 */
 	public static boolean isCoolNumber( int num ) {
-		int x = 2 < x < 7;
-		if (num % x ) {
+		// int x = 2 < x && x < 7;
+		if (num % 3 == 1 && num % 4 == 1 && num % 5 == 1 && num % 6 == 1) {
 			return true;
 		}
-		 return false;
+		else {
+			return false;
+		}
 	}
 	
 		/*
@@ -28,7 +31,9 @@ public class CoolNumbers
 	 *of the coolNumbers between 6 and stop
 	 */
 	public static int countCoolNumbers( int stop ) {
-
+		for (int i = 6; i < stop; i++) {
+			isCoolNumber(i);
+		}
 		return 0;
 	}
 }

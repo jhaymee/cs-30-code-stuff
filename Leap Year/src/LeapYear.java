@@ -1,10 +1,10 @@
-// Program name: (The name you gave the program)
+// Program name: Leap Year
 
-// Student name: (Your name)
+// Student name: Jhaymee Bisenio
 
-// Date: (The date you completed the program)
+// Date: 7 April 2024
 
-// Program Description:
+// Program Description: determines if a year is a leap year
 
 import static java.lang.System.*; 
 import java.util.Scanner;
