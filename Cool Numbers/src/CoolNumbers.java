@@ -35,7 +35,7 @@ public class CoolNumbers
 		int count = 0;
 		for (i = 6; i < stop; i++) {
 			isCoolNumber(i);
-			count = stop - i;
+			count = stop - i + 1;
 		}
 		return count;
 	}
