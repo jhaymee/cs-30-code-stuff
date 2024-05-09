@@ -1,10 +1,10 @@
-// Program name: (The name you gave the program)
+// Program name: Cool Numbers
 
-// Student name: (Your name)
+// Student name: Jhaymee Bisenio
 
-// Date: (The date you completed the program)
+// Date: 9 May 2024
 
-// Program Description:
+// Program Description: determines if a number is a cool number (a number that has a remainder of 1 when divided by 3-6) and counts how many cool numbers a range of numbers has
 
 import static java.lang.System.*;
 
@@ -34,8 +34,9 @@ public class CoolNumbers
 		int i = 6;
 		int count = 0;
 		for (i = 6; i < stop; i++) {
-			isCoolNumber(i);
-			count = stop - i + 1;
+			if (isCoolNumber(i)) {
+				count++;
+			}
 		}
 		return count;
 	}
