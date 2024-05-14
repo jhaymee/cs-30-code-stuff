@@ -1,6 +1,10 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name
+// Program name: Loop Stats
+
+// Student name: Jhaymee Bisenio
+
+// Date: 14 April 2024
+
+// Program Description:
 
 import static java.lang.System.*;
 
