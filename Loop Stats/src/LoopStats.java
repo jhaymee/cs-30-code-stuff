@@ -2,7 +2,7 @@
 
 // Student name: Jhaymee Bisenio
 
-// Date: 14 April 2024
+// Date: 27 May 2024
 
 // Program Description:
 
@@ -12,22 +12,20 @@ public class LoopStats
 {
 	private int start, stop;
 
-	public LoopStats()
-	{
-	}
-
-	public LoopStats(int beg, int end)
-	{
-	}
-
-	public void setNums(int beg, int end)
-	{
-
+	public LoopStats() {
 
 	}
 
-	public int getEvenCount()
-	{
+	public LoopStats(int beg, int end) {
+		
+	}
+
+	public void setNums(int beg, int end) {
+
+
+	}
+
+	public int allEvens() {
 		int evenCount=0;
 
 
@@ -36,8 +34,7 @@ public class LoopStats
 		return evenCount;
 	}
 
-	public int getOddCount()
-	{
+	public int allOdds() {
 		int oddCount=0;
 
 
@@ -47,8 +44,7 @@ public class LoopStats
 		return oddCount;
 	}
 
-	public int getTotal()
-	{
+	public int getTotal() {
 		int total=0;
 
 
@@ -57,8 +53,7 @@ public class LoopStats
 		return total;
 	}
 	
-	public String toString()
-	{
+	public String toString() {
 		return start + " " + stop;
 	}
 }
