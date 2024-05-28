@@ -17,7 +17,10 @@ public class LoopStats
 	}
 
 	public LoopStats(int beg, int end) {
-		
+		beg = start;
+		end = stop;
+		System.out.println(allEvens());
+		System.out.println(allOdds());
 	}
 
 	public void setNums(int beg, int end) {
@@ -27,19 +30,24 @@ public class LoopStats
 
 	public int allEvens() {
 		int evenCount=0;
-
-
-
+		int i = 0;
+		for (i = start; i <= stop; i++) {
+			if (i % 2 == 0) {
+				evenCount++;
+			}
+		}
 
 		return evenCount;
 	}
 
 	public int allOdds() {
 		int oddCount=0;
-
-
-
-
+		int i = 0;
+		for (i = start; i <= stop; i++) {
+			if (i % 2 != 0) {
+				oddCount++;
+			}
+		}
 
 		return oddCount;
 	}
