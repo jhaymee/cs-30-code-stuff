@@ -3,11 +3,9 @@ class Ball {
     int cr, cg, cb; //RGB values
     int dx, dy; //Velocity or Speed Values
     int width, height; //variables for the screen dimensions
-    int grav;
-    boolean infected;
 
     // Constructor Method
-    Ball(int ballx, int bally, int balld, int windoww, int windowh, boolean inf) {
+    Ball(int ballx, int bally, int balld, int windoww, int windowh) {
         x = ballx; //set the x cord
         y = bally; //set the y cord
         d = balld; //set the radius
@@ -20,35 +18,21 @@ class Ball {
         //Set Velocity
         dx = int( random(-10,10));
         dy = int( random(-10,10));
-        grav = -1;
 
         // Passing over the width and height data of the screen
         width = windoww; 
         height = windowh;
-
-        infected = ballInf;
-
     }
 
     void display() {
-
-        if (infected == true) {
-            fill (255,0,0,70);
-        }
         fill(cr, cg, cb);
         circle(x,y,d);
-
     }
 
     void move() {
         //apply the rate of change (velocity)
         x = x + dx;
         y = y + dy;
-
-        if (infected == true) {
-            dy = dy - grav;
-        }
-       
 
         if (x <= 0 + d/2 || x >= width - d/2) {
             // Reverses direction
@@ -78,17 +62,8 @@ class Ball {
             //Ball 2 gets velocity 1
             otherBall.dx = tempdx;
             otherBall.dy = tempdy;
-
-            if (otherBall.infected == true && infected == false) {
-                infected = true;
-            }
-
-            else if (otherBall.infected == false && infected == )
-                otherBall.infected = true;
         }
 
     }
-
-    
 
 }

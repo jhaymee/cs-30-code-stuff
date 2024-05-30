@@ -36,11 +36,4 @@ void mousePressed() {
     //     ballGroup[pos] = new Ball(mouseX, mouseY, 100);
     //     pos++;
     // }
-
-    
 }
-void keyPressed() {
-        if (key == 'j') {
-            ballGroup.add(new Ball(width/2, height/2, 50, width, height, true));
-        }
-    }
